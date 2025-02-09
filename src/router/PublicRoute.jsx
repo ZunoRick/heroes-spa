@@ -6,7 +6,7 @@ export const PublicRoute = ({ children }) => {
   const { authState } = useContext( AuthContext )
   const { logged } = authState || {}
 
-  const lastPath = localStorage.getItem('lastPath') || '/'
+  const lastPath = localStorage.getItem('lastPath') || '/marvel'
 
   return (!logged)
     ? children
